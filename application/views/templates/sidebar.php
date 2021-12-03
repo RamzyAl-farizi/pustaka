@@ -33,6 +33,12 @@ justify-content-center" href="index.html">
             <i class="fa fa-fw fa book"></i>
             <span>Data Anggota</span></a>
     </li>
+    <li class="nav-item">
+        <a class="nav-link pb-0" href="<?=
+                                        base_url('autentifikasi/logout'); ?>" data-toggle="modal" data-target="#logoutModal">
+            <i class="fa fa-fw fa book"></i>
+            <span>logout</span></a>
+    </li>
     </li>
     <!-- Divider -->
     <hr class="sidebar-divider mt-3">
