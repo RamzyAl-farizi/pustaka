@@ -16,27 +16,37 @@ justify-content-center" href="index.html">
 
     <!-- Heading -->
     <div class="sidebar-heading">
-        Master Data
+        Home
     </div>
+
     <!-- Nav Item - Dashboard -->
     <li class="nav-item active">
-        <!-- Nav Item - Dashboard -->
+        <a class="nav-link pb-0" href="<?= base_url('autentifikasi/index'); ?>">
+            <i class="fas fa-fw fa-tachometer-alt"></i>
+            <span>Dashboard</span></a>
+
+        <!-- Divider -->
+        <hr class="sidebar-divider mt-3">
+
+        <div class="sidebar-heading">
+            Master Data
+        </div>
+
+    </li>
+    <!-- Nav Item - Dashboard -->
     <li class="nav-item">
-        <a class="nav-link pb-0" href="<?=
-                                        base_url('buku'); ?>">
-            <i class="fa fa-fw fa book"></i>
+        <a class="nav-link pb-0" href="<?= base_url('buku'); ?>">
+            <i class="fa fa-fw fa-book"></i>
             <span>Data Buku</span></a>
     </li>
     <li class="nav-item">
-        <a class="nav-link pb-0" href="<?=
-                                        base_url('user/anggota'); ?>">
-            <i class="fa fa-fw fa book"></i>
+        <a class="nav-link pb-0" href="<?= base_url('user/anggota'); ?>">
+            <i class="fas fa-address-card"></i>
             <span>Data Anggota</span></a>
     </li>
     <li class="nav-item">
-        <a class="nav-link pb-0" href="<?=
-                                        base_url('autentifikasi/logout'); ?>" data-toggle="modal" data-target="#logoutModal">
-            <i class="fa fa-fw fa book"></i>
+        <a class="nav-link pb-0" href="<?= base_url('autentifikasi/logout'); ?>" data-toggle="modal" data-target="#logoutModal">
+            <i class="fas fa-sign-out-alt"></i>
             <span>logout</span></a>
     </li>
     </li>

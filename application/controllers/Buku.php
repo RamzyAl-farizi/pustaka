@@ -122,7 +122,7 @@ Penerbit', 'required|min_length[3]', [
         $this->uri->segment(3)])->result_array();
         foreach ($kategori as $k) {
             $data['id'] = $k['id_kategori'];
-            $data['k'] = $k['kategori'];
+            $data['k'] = $k['nama_kategori'];
         }
         $data['kategori'] = $this->ModelBuku->getKategori()->result_array();
         $this->form_validation->set_rules('judul_buku', 'Judul 
@@ -223,5 +223,11 @@ Penerbit', 'required|min_length[3]', [
             $this->ModelBuku->updateBuku($data, ['id' => $this->input->post('id')]);
             redirect('buku');
         }
+    }
+    public function hapusBuku()
+    {
+        $where = ['id' => $this->uri->segment(3)];
+        $this->ModelBuku->hapusBuku($where);
+        redirect('buku');
     }
 }
